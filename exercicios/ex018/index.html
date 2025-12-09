@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        
+        a {
+            color: blue;
+            text-decoration: none;
+        }
+
+        a:hover {
+            color: aquamarine;
+        }
+
+        a:active {
+            color: black;
+        }
+
+        a::before {
+            content: '[link] ';
+            color: gray;
+        }
+
+        a::after {
+            content: ' [link]';
+            color: gray;
+        }
+    </style>
+</head>
+<body>
+    <h1>Personalizando Links</h1>
+    <ul>
+        <li><a href="https://github.com/palaciopedro">Repositório GitHub</a></li>
+        <li><a href="https://www.youtube.com/@palacio_pedro">Canal do YouTub</a></li>
+        <li><a href="https://www.instagram.com/palaciobhk/">Perfil do Instagram</a></li>
+    </ul>
+</body>
+</html> 

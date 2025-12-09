@@ -1,0 +1,26 @@
+@charset "UTF-8";
+
+body {
+    background-color: #FFDE0A;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    color: #615404;
+}
+
+h2 {
+    color: #B39C07;
+}
+
+.titulo {
+    background-color: #615404;
+    color: white;
+
+}
+
+.subtitulo {
+    width: 250px;
+    background-color: white;
+    
+}

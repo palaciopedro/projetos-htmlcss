@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping tags</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            background-color: #BAB4AB;
+        }
+
+        header {
+            background-color: #ABB4BA;
+            color: #375165;
+            text-align: center;
+            padding: 10px;
+            margin: 10px;
+            border-radius: 5px;
+            box-shadow: 0px 0px 7px #6f6c67;
+        }
+
+        nav {
+            background-color: #7A684D;
+            margin: 10px;
+            border-radius: 5px;
+            box-shadow: 0px 0px 7px #6f6c67;
+        }
+
+        nav > a {
+            text-decoration: none;
+            color: white;
+            margin-right: 10px;
+        }
+
+        nav > a:hover {
+            color: #375165;
+        }
+
+        nav > a:active {
+            color: #3B2C16;
+        }
+
+        main {
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+            text-align: justify;
+        }
+
+        article > p {
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        article > aside {
+            font-size: 0.8em;
+            text-align: right;
+        }
+
+        footer {
+            background-color: #3B2C16;
+            color: white;
+            margin: 10px;
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Meu Site</h1>
+        <nav id="menu">
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <article id="noticias">
+                <h2>Notícias</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat asperiores assumenda facilis sequi expedita quas enim voluptatem et, sint aspernatur adipisci quaerat quia voluptatibus dolor nam incidunt, a, dolorum voluptates!</p>
+                <aside>
+                    <p>Artigo escrito por Alecrim</p>
+                </aside>
+            </article>
+        </section>
+    </main>
+    <footer>
+        <p>Desenvolvido por Pedro Palacio</p>
+    </footer>
+</body>
+</html>

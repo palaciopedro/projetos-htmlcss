@@ -57,13 +57,17 @@ main {
     width: 800px;
     margin: auto;
     background-color: white;
-    padding: 15px 10px 15px 10px;
+    padding: 15px 0px 15px 0px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.438);
+    border-radius: 0px 0px 10px 10px;
 }
  
 p {
     font-family: Arial, Helvetica, sans-serif;
     text-indent: 30px;
     text-align: justify;
+    padding-right: 10px;
+    padding-left: 10px;
 }
 
 article > p > strong {
@@ -75,13 +79,15 @@ article > h2 {
     font-family: 'Idroid', serif;
     font-size: 1.8em;
     margin: 0px;
+    padding-right: 10px;
+    padding-left: 10px;
 }
 
 article > h3 {
     background-image: linear-gradient(90deg, #57cc4335, white);
     color: #4F664A;
     font-family: 'Idroid', serif;
-    padding: 1px;
+    padding: 1px 10px 1px 10px;
     margin: 0px;
 }
 
@@ -90,19 +96,48 @@ article > h4 {
     font-size: 1.1em;
     background-color: #4F664A;
     color: white;
-    padding: 10px;
+    padding: 10px 20px 10px 20px;
     border-radius: 15px 15px 0px 0px;
+}
+
+article > picture {
+    display: block;
+    margin: auto;
+}
+
+article > img {
+    display: block;
+    margin: auto;
+}
+
+div {
+    background-color: #4F664A;
+    border: 20px solid #4F664A;
+    padding: 0px;
+}
+
+div > iframe {
+    width: 700px;
+    height: 400px;
+    display: block;
+    margin: auto;
 }
 
 article#chart {
     background-color: #5c995197;
     border-radius: 15px;
     box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.453);
+    margin: 10px;
 }
 
 #chart > p {
     padding-left: 10px;
     padding-right: 10px;
+    padding-bottom: 10px;
+}
+
+#chart > ul {
+    text-decoration: underline;
 }
 
 p > a {

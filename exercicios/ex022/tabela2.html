@@ -10,19 +10,37 @@
         }
 
         table {
-            width: 400px;
+            position: relative;
+            width: 500px;
             border-collapse: collapse;   
         }
         
+        caption {
+            background-color: rgb(55, 55, 55);
+            color: white;
+            font-size: 1.2em;
+            font-weight: bold;
+            padding: 10px;
+        }
+        
         thead {
-            background-color: rgb(201, 200, 200);
+            background-color: rgb(147, 147, 147);
             font-size: 1.3em;
-            text-align: left;
+        }
+
+        thead > tr > th {
+            background-color: rgb(147, 147, 147);
+            position: sticky;
+            top: -1px;
+        }
+
+        tbody > tr:nth-child(even){
+            background-color: rgb(216, 216, 216);
         }
 
         td, th {
             border: 1px solid black;
-            padding-left: 10px;
+            padding: 10px;
         }
 
         .numero {
@@ -31,7 +49,7 @@
         }
         
         tfoot {
-            background-color: rgb(228, 228, 228);
+            background-color: rgb(170, 170, 170);
             font-weight: bold;
             text-align: left
         }
@@ -45,10 +63,11 @@
 <body>
     <h1>Uso de tabelas grandes</h1>
     <table>
+        <caption>População das cinco maiores Unidades Federativas</caption>
         <thead>
             <tr>
-                <th>Estado</th>
-                <th>População</th>
+                <th scope="col">Estado</th>
+                <th scope="col">População</th>
             </tr>
         </thead>
         <tbody>
@@ -72,10 +91,70 @@
                 <td>Paraná</td>
                 <td class="numero">11 890 517</td>
             </tr>
+            <tr>
+                <td>São Paulo</td>
+                <td class="numero">46 081 801</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="numero">21 393 441</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="numero">17 223 547</td>
+            </tr>
+            <tr>
+                <td>Bahia</td>
+                <td class="numero">14 870 907</td>
+            </tr>
+            <tr>
+                <td>Paraná</td>
+                <td class="numero">11 890 517</td>
+            </tr>
+            <tr>
+                <td>São Paulo</td>
+                <td class="numero">46 081 801</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="numero">21 393 441</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="numero">17 223 547</td>
+            </tr>
+            <tr>
+                <td>Bahia</td>
+                <td class="numero">14 870 907</td>
+            </tr>
+            <tr>
+                <td>Paraná</td>
+                <td class="numero">11 890 517</td>
+            </tr>
+            <tr>
+                <td>São Paulo</td>
+                <td class="numero">46 081 801</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="numero">21 393 441</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="numero">17 223 547</td>
+            </tr>
+            <tr>
+                <td>Bahia</td>
+                <td class="numero">14 870 907</td>
+            </tr>
+            <tr>
+                <td>Paraná</td>
+                <td class="numero">11 890 517</td>
+            </tr>
         </tbody>
         <tfoot>
             <tr>
-                <th>Total</th>
+                <th scope="row">Total</th>
                 <td class="total">111 460 213</td>
             </tr>
         </tfoot>
